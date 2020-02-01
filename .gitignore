@@ -4,6 +4,7 @@ db_types/
 dir_structure*json
 public-suffix.json
 .pyfunceble_intern_downtime.json
+iana-domains-db.json
 
 # Conda related
 miniconda.sh
