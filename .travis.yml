@@ -13,7 +13,7 @@ install:
   - conda config --add channels conda-forge
   - conda update -q conda
   - conda env create -q -f ${TRAVIS_BUILD_DIR}/.environment.yaml
-  - source activate iana
+  - source activate user_agents
   - python --version --version
   - pip --version
   - conda --version
