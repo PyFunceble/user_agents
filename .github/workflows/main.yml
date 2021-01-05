@@ -1,0 +1,50 @@
+name: Generation of the user agent file
+on:
+  push:
+    branches:
+      - "master"
+  pull_request:
+    branches:
+      - "master"
+  schedule:
+    - cron: "0 * * * *"
+
+env:
+  PYFUNCEBLE_AUTO_CONFIGURATION: "YES"
+  PYFUNCEBLE_CONFIG_DIR: "/tmp/.pyfunceble"
+  GIT_NAME: "${{ secrets.GIT_BOT_NAME }}"
+  GIT_EMAIL: "${{ secrets.GIT_BOT_EMAIL }}"
+
+jobs:
+  single:
+    name: Run the generator and push changes.
+    runs-on: "${{ matrix.os }}"
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python_version:
+          - "3.9.1"
+        os:
+          - ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        name: Clone repository
+
+      - name: Set up Python ${{ matrix.python_version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python_version }}
+
+      - name: Install dependencies
+        run: |
+          pip install git+https://github.com/funilrys/PyFunceble.git@4.0.0-dev
+
+      - name: Get PyFunceble version
+        run: |
+          PyFunceble --version
+
+      - name: Run User-Agent Generator
+        run: |
+          ./update.py
