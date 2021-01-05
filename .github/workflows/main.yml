@@ -1,4 +1,4 @@
-name: Generation of the user agent file
+name: Generation of the User-Agents file
 on:
   push:
     branches:
@@ -16,7 +16,7 @@ env:
   GIT_EMAIL: "${{ secrets.GIT_BOT_EMAIL }}"
 
 jobs:
-  single:
+  generate:
     name: Run the generator and push changes.
     runs-on: "${{ matrix.os }}"
 
@@ -45,6 +45,6 @@ jobs:
         run: |
           PyFunceble --version
 
-      - name: Run User-Agent Generator
+      - name: Run User-Agents Generator
         run: |
           ./update.py
