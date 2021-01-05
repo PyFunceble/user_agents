@@ -39,8 +39,8 @@ License:
 
     MIT License
 
-    Copyright (c) 2019, 2020 PyFunceble
-    Copyright (c) 2017, 2018, 2019, 2020 Nissar Chababy
+    Copyright (c) 2019, 2020, 2021 PyFunceble
+    Copyright (c) 2017, 2018, 2019, 2020, 2021 Nissar Chababy
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -61,19 +61,16 @@ License:
     SOFTWARE.
 """
 
-import PyFunceble
-from PyFunceble.engine import ci
+import copy
+
+import PyFunceble.factory
+from PyFunceble.cli.continuous_integration.github_actions import GitHubActions
+from PyFunceble.cli.continuous_integration.exceptions import StopExecution
+from PyFunceble.helpers.dict import DictHelper
+
+
 
 OUTPUT_FILE = "user_agents.json"
-
-# We load our custom configuration
-CUSTOM_CONFIG = {
-    "ci": True,
-    "ci_autosave_final_commit": f"Update {OUTPUT_FILE}",
-    "dns_server": ["one.one.one.one"],
-}
-
-PyFunceble.load_config(custom=CUSTOM_CONFIG)
 
 URL = "https://user-agents.net/download"
 PLATFORMS = ["linux", "win10", "macosx"]
@@ -88,7 +85,7 @@ BROWSERS = ["chrome", "firefox", "safari", "ie", "edge", "opera"]
 
 try:
     HEADERS = {
-        "User-Agent": PyFunceble.helpers.Dict().from_json_file(
+        "User-Agent": DictHelper().from_json_file(
             OUTPUT_FILE, return_dict_on_error=False
         )["chrome"]["linux"]
     }
@@ -110,7 +107,8 @@ def __request_latest_user_agent(data):
     :raise Exception if we get something which is not 200 nor 404.
     """
 
-    req = PyFunceble.REQUESTS.post(URL, data=data, headers=HEADERS)
+    PyFunceble.factory.Requester.timeout = 10.0
+    req = PyFunceble.factory.Requester.post(URL, data=data, headers=HEADERS)
 
     if req.status_code in [404]:
         return None
@@ -135,7 +133,7 @@ def get_latest_user_agents(browsers, platforms):
     result = {}
 
     for browser in browsers:
-        data = REQ_DATA_BASE.copy()
+        data = copy.deepcopy(REQ_DATA_BASE)
         data["browser"] = browser
 
         for platform in platforms:
@@ -155,11 +153,14 @@ def get_latest_user_agents(browsers, platforms):
 
 if __name__ == "__main__":
     # We initiate the repostiory.
-    CI_ENGINE = ci.TravisCI()
+    CI_ENGINE = GitHubActions(
+        authorized=True, end_commit_message=f"Update of {OUTPUT_FILE}"
+    )
     CI_ENGINE.init()
 
-    PyFunceble.helpers.Dict(get_latest_user_agents(BROWSERS, PLATFORMS)).to_json_file(
-        OUTPUT_FILE
-    )
+    DictHelper(get_latest_user_agents(BROWSERS, PLATFORMS)).to_json_file(OUTPUT_FILE)
 
-    CI_ENGINE.end_commit()
+    try:
+        CI_ENGINE.apply_end_commit()
+    except StopExecution:
+        pass
