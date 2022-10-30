@@ -64,7 +64,7 @@ License:
 import copy
 import time
 
-import PyFunceble.factory
+import requests
 from PyFunceble.config.loader import ConfigLoader
 from PyFunceble.cli.continuous_integration.github_actions import GitHubActions
 from PyFunceble.cli.continuous_integration.exceptions import StopExecution, ContinuousIntegrationException
@@ -82,7 +82,7 @@ REQ_DATA_BASE = {
     "platform": "linux",
     "platform_bits": 64,
     "download": "json",
-    "limit": 50
+    "limit": 30
 }
 BROWSERS = ["chrome", "firefox", "safari", "ie", "edge", "opera"]
 
@@ -110,8 +110,7 @@ def __request_latest_user_agent(data):
     :raise Exception if we get something which is not 200 nor 404.
     """
 
-    PyFunceble.factory.Requester.timeout = 10.0
-    req = PyFunceble.factory.Requester.post(URL, data=data, headers=HEADERS)
+    req = requests.post(URL, data=data, headers=HEADERS, timeout=10.0)
 
     if req.status_code in [404]:
         return None
@@ -171,25 +170,6 @@ if __name__ == "__main__":
         CI_ENGINE.init()
     except ContinuousIntegrationException:
         pass
-
-    config_loader = ConfigLoader()
-    config_loader.custom_config = {
-        "lookup": {
-            "timeout": 5,
-        },
-        "dns": {
-            "trust_server": True,
-            "follow_server_order": False,
-            "server": [
-                "1.1.1.1",
-                "8.8.8.8",
-                "1.0.0.1",
-                "8.8.4.4"
-            ],
-            "protocol": "TCP"
-        }
-    }
-    config_loader.start()
 
     DictHelper(get_latest_user_agents(BROWSERS, PLATFORMS)).to_json_file(OUTPUT_FILE)
 
