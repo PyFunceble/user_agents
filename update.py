@@ -67,7 +67,7 @@ import time
 import PyFunceble.factory
 from PyFunceble.config.loader import ConfigLoader
 from PyFunceble.cli.continuous_integration.github_actions import GitHubActions
-from PyFunceble.cli.continuous_integration.exceptions import StopExecution
+from PyFunceble.cli.continuous_integration.exceptions import StopExecution, ContinuousIntegrationException
 from PyFunceble.helpers.dict import DictHelper
 
 
@@ -82,6 +82,7 @@ REQ_DATA_BASE = {
     "platform": "linux",
     "platform_bits": 64,
     "download": "json",
+    "limit": 50
 }
 BROWSERS = ["chrome", "firefox", "safari", "ie", "edge", "opera"]
 
@@ -93,8 +94,8 @@ try:
     }
 except TypeError:
     HEADERS = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/107.0.0.0 Safari/537.36"
     }
 
 
@@ -109,7 +110,7 @@ def __request_latest_user_agent(data):
     :raise Exception if we get something which is not 200 nor 404.
     """
 
-    # PyFunceble.factory.Requester.timeout = 10.0
+    PyFunceble.factory.Requester.timeout = 10.0
     req = PyFunceble.factory.Requester.post(URL, data=data, headers=HEADERS)
 
     if req.status_code in [404]:
@@ -118,8 +119,12 @@ def __request_latest_user_agent(data):
     if not req.status_code in [200]:
         raise Exception("Could not get response to work with while requesting. ")
 
-    return req.json()[-1]
+    result = req.json()[-1]
 
+    if result:
+        return "".join([x for x in result.split() if "ip:" not in x])
+
+    return result
 
 def get_latest_user_agents(browsers, platforms):
     """
@@ -159,12 +164,15 @@ def get_latest_user_agents(browsers, platforms):
 
 if __name__ == "__main__":
     # We initiate the repostiory.
-    CI_ENGINE = GitHubActions(
-        authorized=True, end_commit_message=f"Update of {OUTPUT_FILE}"
-    )
-    CI_ENGINE.init()
+    try:
+        CI_ENGINE = GitHubActions(
+            authorized=True, end_commit_message=f"Update of {OUTPUT_FILE}"
+        )
+        CI_ENGINE.init()
+    except ContinuousIntegrationException:
+        pass
 
-    config_loader = ConfigLoader().start()
+    config_loader = ConfigLoader()
     config_loader.custom_config = {
         "lookup": {
             "timeout": 5,
@@ -181,6 +189,7 @@ if __name__ == "__main__":
             "protocol": "TCP"
         }
     }
+    config_loader.start()
 
     DictHelper(get_latest_user_agents(BROWSERS, PLATFORMS)).to_json_file(OUTPUT_FILE)
 
