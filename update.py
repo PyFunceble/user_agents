@@ -156,7 +156,7 @@ def get_latest_user_agents(browsers, platforms):
             result[browser][platform] = __request_latest_user_agent(data)
             print(f"Finished: {browser} | {platform}")
 
-            time.sleep(30)
+            time.sleep(60.0)
 
     return result
 
