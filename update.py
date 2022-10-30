@@ -82,7 +82,7 @@ REQ_DATA_BASE = {
     "platform": "linux",
     "platform_bits": 64,
     "download": "json",
-    "limit": 30
+    "limit": 1
 }
 BROWSERS = ["chrome", "firefox", "safari", "ie", "edge", "opera"]
 
