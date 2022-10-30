@@ -39,8 +39,8 @@ License:
 
     MIT License
 
-    Copyright (c) 2019, 2020, 2021 PyFunceble
-    Copyright (c) 2017, 2018, 2019, 2020, 2021 Nissar Chababy
+    Copyright (c) 2019, 2020, 2021, 2022 PyFunceble
+    Copyright (c) 2017, 2018, 2019, 2020, 2021, 2022 Nissar Chababy
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -62,8 +62,10 @@ License:
 """
 
 import copy
+import time
 
 import PyFunceble.factory
+from PyFunceble.config.loader import ConfigLoader
 from PyFunceble.cli.continuous_integration.github_actions import GitHubActions
 from PyFunceble.cli.continuous_integration.exceptions import StopExecution
 from PyFunceble.helpers.dict import DictHelper
@@ -107,7 +109,7 @@ def __request_latest_user_agent(data):
     :raise Exception if we get something which is not 200 nor 404.
     """
 
-    PyFunceble.factory.Requester.timeout = 10.0
+    # PyFunceble.factory.Requester.timeout = 10.0
     req = PyFunceble.factory.Requester.post(URL, data=data, headers=HEADERS)
 
     if req.status_code in [404]:
@@ -146,7 +148,11 @@ def get_latest_user_agents(browsers, platforms):
             if browser not in result:
                 result[browser] = {}
 
+            print(f"Starting: {browser} | {platform}")
             result[browser][platform] = __request_latest_user_agent(data)
+            print(f"Finished: {browser} | {platform}")
+
+            time.sleep(30)
 
     return result
 
@@ -157,6 +163,24 @@ if __name__ == "__main__":
         authorized=True, end_commit_message=f"Update of {OUTPUT_FILE}"
     )
     CI_ENGINE.init()
+
+    config_loader = ConfigLoader().start()
+    config_loader.custom_config = {
+        "lookup": {
+            "timeout": 5,
+        },
+        "dns": {
+            "trust_server": True,
+            "follow_server_order": False,
+            "server": [
+                "1.1.1.1",
+                "8.8.8.8",
+                "1.0.0.1",
+                "8.8.4.4"
+            ],
+            "protocol": "TCP"
+        }
+    }
 
     DictHelper(get_latest_user_agents(BROWSERS, PLATFORMS)).to_json_file(OUTPUT_FILE)
 
