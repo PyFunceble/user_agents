@@ -85,7 +85,7 @@ REQ_SESSION = CachedSession(
     stale_if_error=True,
 )
 
-requests.packages.urllib3.util.connection.HAS_IPV4 = False
+#requests.packages.urllib3.util.connection.HAS_IPV4 = False
 
 OUTPUT_FILE = "user_agents.json"
 
