@@ -39,7 +39,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install PyFunceble-dev
+          pip install PyFunceble-dev requests-cache
 
       - name: Get PyFunceble version
         run: |

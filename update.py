@@ -65,12 +65,27 @@ import copy
 import time
 
 import requests
-from PyFunceble.config.loader import ConfigLoader
+from datetime import timedelta
+from PyFunceble.cli.continuous_integration.exceptions import (
+    ContinuousIntegrationException,
+    StopExecution,
+)
 from PyFunceble.cli.continuous_integration.github_actions import GitHubActions
-from PyFunceble.cli.continuous_integration.exceptions import StopExecution, ContinuousIntegrationException
+from PyFunceble.config.loader import ConfigLoader
 from PyFunceble.helpers.dict import DictHelper
+from requests_cache import CachedSession
 
+REQ_SESSION = CachedSession(
+    "http_cache",
+    backend="sqlite",
+    cache_control=True,
+    expire_after=timedelta(days=1),
+    allowable_codes=[200, 404],
+    allowable_methods=["GET", "POST"],
+    stale_if_error=True,
+)
 
+requests.packages.urllib3.util.connection.HAS_IPV4 = False
 
 OUTPUT_FILE = "user_agents.json"
 
@@ -82,7 +97,7 @@ REQ_DATA_BASE = {
     "platform": "linux",
     "platform_bits": 64,
     "download": "json",
-    "limit": 1
+    "limit": 1,
 }
 BROWSERS = ["chrome", "firefox", "safari", "ie", "edge", "opera"]
 
@@ -110,13 +125,19 @@ def __request_latest_user_agent(data):
     :raise Exception if we get something which is not 200 nor 404.
     """
 
-    req = requests.post(URL, data=data, headers=HEADERS, timeout=10.0)
+    req = REQ_SESSION.post(URL, data=data, headers=HEADERS, timeout=10.0)
 
     if req.status_code in [404]:
         return None
 
     if not req.status_code in [200]:
-        raise Exception("Could not get response to work with while requesting. ")
+        raise Exception(
+            f"Could not get response to work with while requesting.\n"
+            f"URL:{req.url}\n"
+            f"STATUS: {req.status_code}\n"
+            f"DATA: {data}\n"
+            f"HEADERS: {HEADERS}"
+        )
 
     result = req.json()[-1]
 
@@ -124,6 +145,7 @@ def __request_latest_user_agent(data):
         return "".join([x for x in result.split() if "ip:" not in x])
 
     return result
+
 
 def get_latest_user_agents(browsers, platforms):
     """
