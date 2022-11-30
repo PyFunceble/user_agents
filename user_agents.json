@@ -1,8 +1,8 @@
 {
     "chrome": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/534.24(KHTML,likeGecko)Chrome/100.0.4896.127Safari/534.24XiaoMi/MiuiBrowser/13.18.1-gn",
-        "macosx": "Mozilla/5.0(Macintosh;U;IntelMacOSX10_40_93)AppleWebKit/533.09.52(KHTML,likeGecko)Chrome/57.5.0123.6496Safari/530.60Edge/34.76749",
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36LikeWise/90.6.5635.36"
+        "macosx": "Mozilla/5.0(Macintosh;U;PPCMacOSX10_53_06)AppleWebKit/534.02.55(KHTML,likeGecko)Chrome/53.6.1442.6714Safari/530.73Edge/34.79934",
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36Config/92.2.5321.22"
     },
     "edge": {
         "linux": null,
