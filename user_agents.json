@@ -1,17 +1,17 @@
 {
     "chrome": {
-        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/53.0.2795.7Safari/537.36",
+        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36",
         "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10_30_83)AppleWebKit/532.89.41(KHTML,likeGecko)Chrome/57.4.9081.5353Safari/534.59",
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36"
     },
     "edge": {
         "linux": null,
         "macosx": null,
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36Edg/107.0.1418.62AtContent/93.5.9244.45"
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36Edg/107.0.1418.62Config/93.2.9751.52"
     },
     "firefox": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64;rv:107.0)Gecko/20100101Firefox/107.0",
-        "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX13.0;rv:96.0)Gecko/20100101Firefox/108.0a1",
+        "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10.11;rv:78.0)Gecko/20100101Firefox/78.0",
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:107.0)Gecko/20100101Firefox/107.0Trailer/98.3.9882.83"
     },
     "ie": {
@@ -22,10 +22,10 @@
     "opera": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/81.0.4044.138Safari/537.36OPR/58.6.2878.68030",
         "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10_11_6)AppleWebKit/537.36(KHTML,likeGecko)Chrome/103.0.5060.134Safari/537.36OPR/89.0.4447.98",
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36OPR/93.0.0.0(Editionavira-2)"
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/106.0.0.0Safari/537.36OPR/92.0.0.0(EditionGX-CN)"
     },
     "safari": {
-        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.45.08(KHTML,likeGecko)Version/4.0.5Safari/530.63",
+        "linux": "Mozilla/5.0(X11;Linuxx86_64;TIMVISIONBOXBuild/QTG1.211126.001;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/107.0.5304.141Safari/537.36QuickSearchTV/LittleSunEdition112.24",
         "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10_11_3)AppleWebKit/601.4.4(KHTML,likeGecko)Version/9.0.3Safari/601.4.4",
         "win10": null
     }
