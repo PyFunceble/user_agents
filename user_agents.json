@@ -1,7 +1,7 @@
 {
     "chrome": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36",
-        "macosx": "Mozilla/5.0(Macintosh;U;PPCMacOSX10_50_03)AppleWebKit/534.19.62(KHTML,likeGecko)Chrome/53.6.1036.7309Safari/530.79Edge/34.85877",
+        "macosx": "Mozilla/5.0(Macintosh;U;PPCMacOSX10_40_93)AppleWebKit/533.09.52(KHTML,likeGecko)Chrome/57.6.1115.6487Safari/530.60Edge/34.76655",
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36Agency/97.8.2607.8"
     },
     "edge": {
@@ -10,7 +10,7 @@
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36Edg/108.0.1462.46"
     },
     "firefox": {
-        "linux": "Mozilla/5.0(X11;Linuxx86_64;rv:5.0)Gecko/20170614Firefox/37.0",
+        "linux": "Mozilla/5.0(X11;Linuxx86_64;rv:107.0)Gecko/20100101Firefox/107.0",
         "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10.11;rv:78.0)Gecko/20100101Firefox/78.0",
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:107.0)Gecko/20100101Firefox/107.0"
     },
