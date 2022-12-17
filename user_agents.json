@@ -1,13 +1,13 @@
 {
     "chrome": {
-        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36",
+        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.5359.124Safari/537.36",
         "macosx": "Mozilla/5.0(Macintosh;U;PPCMacOSX10_40_93)AppleWebKit/533.09.52(KHTML,likeGecko)Chrome/57.6.1115.6487Safari/530.60Edge/34.76655",
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36Agency/97.8.2607.8"
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36"
     },
     "edge": {
         "linux": null,
         "macosx": null,
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36Edg/108.0.1462.46"
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/109.0.0.0Safari/537.36Edg/109.0.1518.23"
     },
     "firefox": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64;rv:107.0)Gecko/20100101Firefox/107.0",
@@ -20,13 +20,13 @@
         "win10": "Mozilla/5.0(compatible;MSIE10.0;WindowsNT10.0;Win64;x64;Trident/7.0;MicrosoftOutlook16.0.15629)"
     },
     "opera": {
-        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/109.0.0.0Safari/537.36OPR/95.0.0.0(Editiondeveloper)",
+        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36OPR/94.0.0.0",
         "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10_11_6)AppleWebKit/537.36(KHTML,likeGecko)Chrome/103.0.5060.134Safari/537.36OPR/89.0.4447.98",
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/107.0.0.0Safari/537.36OPR/93.0.0.0"
     },
     "safari": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.43.06(KHTML,likeGecko)Version/4.0.5Safari/530.61",
-        "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10_11_3)AppleWebKit/601.4.4(KHTML,likeGecko)Version/9.0.3Safari/601.4.4",
+        "macosx": "Safari/18614.3.7.1.5CFNetwork/1402.0.8Darwin/22.2.0",
         "win10": null
     }
 }
