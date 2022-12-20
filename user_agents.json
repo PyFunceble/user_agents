@@ -1,18 +1,18 @@
 {
     "chrome": {
-        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.41Safari/537.36JioPages/5.0.1",
-        "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10_31_84)AppleWebKit/532.80.43(KHTML,likeGecko)Chrome/57.4.9217.5589Safari/534.51",
+        "linux": "Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/56.77.34.5Safari/537.36QJY/2.0Model/ElAraby-Tornado-ES9300HbbTV/v1.5(;Tornado;MSD5686;;ES9300;)",
+        "macosx": "Mozilla/5.0(Macintosh;U;IntelMacOSX10_32_89)AppleWebKit/532.84.21(KHTML,likeGecko)Chrome/56.2.7256.1984Safari/532.13Edge/36.17052",
         "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36"
     },
     "edge": {
         "linux": null,
         "macosx": null,
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36Edg/108.0.1462.54GLS/91.10.3789.90"
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/108.0.0.0Safari/537.36Edg/108.0.1462.46"
     },
     "firefox": {
         "linux": "Mozilla/5.0(X11;Linuxx86_64;rv:107.0)Gecko/20100101Firefox/107.0",
         "macosx": "Mozilla/5.0(Macintosh;IntelMacOSX10.11;rv:78.0)Gecko/20100101Firefox/78.0",
-        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:108.0)Gecko/20100101Firefox/108.0"
+        "win10": "Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:108.0)Gecko/20100101Firefox/108.0GLS/94.10.2159.60"
     },
     "ie": {
         "linux": null,
