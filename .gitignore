@@ -11,3 +11,6 @@ miniconda.sh
 
 # VS Code related
 .vscode
+
+# Project related
+learning.xml

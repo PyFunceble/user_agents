@@ -1,15 +1,17 @@
 # user_agents
-A repository which aim to provide an up to date user agent for PyFunceble
+
+A repository that aims to provide an up-to-date user agent for the PyFunceble
+projects.
 
 ## Note
 
-DO NOT ABUSE https://user-agents.net/.
-The script we provide will run every 24 hours. Nothing more. Nothing less.
-So you should also do!
+**WARNING**: **DO NOT ABUSE.**
+The script we provide will run every weeks. Nothing more. Nothing less.
+You shouldn't spam
 
 ## Special Thanks
 
-Thanks to https://user-agents.net/ for the service!
+Thanks to https://user-agents.net/ & https://useragents.me for the service!
 
 ## LICENSE
 
