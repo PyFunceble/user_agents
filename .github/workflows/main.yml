@@ -40,7 +40,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install PyFunceble-dev requests-cache
+          pip install PyFunceble-dev requests-cache bs4
 
       - name: Get PyFunceble version
         run: |
