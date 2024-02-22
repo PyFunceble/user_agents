@@ -330,7 +330,11 @@ class UserAgentsUpdater:
         for device_groups in cache["data"].values():
             for user_agents in device_groups.values():
                 for user_agent in user_agents:
-                    if user_agent["normalized_browser"] not in normalized_data:
+                    if (
+                        user_agent["normalized_browser"] not in normalized_data
+                        or user_agent["normalized_browser"]
+                        not in normalized_data["@modern"]
+                    ):
                         normalized_data[user_agent["normalized_browser"]] = {}
                         normalized_data["@modern"][
                             user_agent["normalized_browser"]
@@ -360,9 +364,16 @@ class UserAgentsUpdater:
                     )
 
                     if user_agent["normalized_os"] == "windows":
-                        normalized_data[user_agent["normalized_browser"]][
+                        normalized_data[user_agent["normalized_browser"]]["win10"] = (
+                            normalized_data[user_agent["normalized_browser"]][
+                                user_agent["normalized_os"]
+                            ]
+                        )
+                        normalized_data["@modern"][user_agent["normalized_browser"]][
                             "win10"
-                        ] = normalized_data[user_agent["normalized_browser"]][
+                        ] = normalized_data["@modern"][
+                            user_agent["normalized_browser"]
+                        ][
                             user_agent["normalized_os"]
                         ]
 
