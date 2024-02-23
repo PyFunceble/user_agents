@@ -377,11 +377,6 @@ class UserAgentsUpdater:
                             user_agent["normalized_os"]
                         ]
 
-                    if user_agent["normalized_browser"] == "edge":
-                        normalized_data["ie"] = normalized_data[
-                            user_agent["normalized_browser"]
-                        ]
-
         necessary = ["linux", "macosx", "windows", "win10"]
 
         for browser in normalized_data["@modern"]:
