@@ -1,38 +1,54 @@
 {
-  "@timestamp": "2024-09-18T00:51:31.695239",
+  "@timestamp": "2024-09-25T00:54:42.021084",
   "data": {
     "common": {
       "desktop": [
-        {
-          "browser": "Chrome 127.0.0",
-          "normalized_browser": "chrome",
-          "normalized_os": "macosx",
-          "os": "Mac OS X",
-          "share": "33.33",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.3"
-        },
         {
           "browser": "Chrome 128.0.0",
           "normalized_browser": "chrome",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "24.67",
+          "share": "33.73",
           "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.3"
         },
         {
-          "browser": "Chrome 127.0.0",
+          "browser": "Chrome 128.0.0",
+          "normalized_browser": "chrome",
+          "normalized_os": "macosx",
+          "os": "Mac OS X",
+          "share": "30.6",
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.3"
+        },
+        {
+          "browser": "Other",
+          "normalized_browser": "other",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "7.71",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130."
+        },
+        {
+          "browser": "Chrome 129.0.0",
           "normalized_browser": "chrome",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "15.75",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.3"
+          "share": "7.23",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.3"
+        },
+        {
+          "browser": "Edge 129.0.0",
+          "normalized_browser": "edge",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "4.82",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0."
         },
         {
           "browser": "Edge 128.0.0",
           "normalized_browser": "edge",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "7.87",
+          "share": "4.34",
           "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0."
         },
         {
@@ -40,128 +56,112 @@
           "normalized_browser": "other",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "5.77",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129."
-        },
-        {
-          "browser": "Chrome 109.0.0",
-          "normalized_browser": "chrome",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "2.1",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3"
-        },
-        {
-          "browser": "Edge 126.0.0",
-          "normalized_browser": "edge",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "1.57",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0."
-        },
-        {
-          "browser": "Opera 112.0.0",
-          "normalized_browser": "opera",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "1.57",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/112.0.0."
-        },
-        {
-          "browser": "Edge 127.0.0",
-          "normalized_browser": "edge",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "1.05",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0."
-        },
-        {
-          "browser": "Edge 124.0.0",
-          "normalized_browser": "edge",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "1.05",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0."
+          "share": "1.93",
+          "useragent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115."
         },
         {
           "browser": "Edge 125.0.0",
           "normalized_browser": "edge",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "0.52",
+          "share": "1.93",
           "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0."
         },
         {
-          "browser": "Other",
-          "normalized_browser": "other",
+          "browser": "Chrome 115.0.0",
+          "normalized_browser": "chrome",
           "normalized_os": "linux",
           "os": "Linux",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113."
+          "share": "0.96",
+          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.3"
+        },
+        {
+          "browser": "Chrome 69.0.3497",
+          "normalized_browser": "chrome",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.96",
+          "useragent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.3"
+        },
+        {
+          "browser": "Edge 127.0.0",
+          "normalized_browser": "edge",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.96",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0."
+        },
+        {
+          "browser": "Chrome 109.0.0",
+          "normalized_browser": "chrome",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.96",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3"
+        },
+        {
+          "browser": "Samsung Internet 26.0",
+          "normalized_browser": "samsung",
+          "normalized_os": "linux",
+          "os": "Linux",
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Safari/537.3"
         },
         {
           "browser": "Other",
           "normalized_browser": "other",
-          "normalized_os": "linux",
-          "os": "Ubuntu",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129."
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 6.1; rv:109.0) Gecko/20100101 Firefox/115."
+        },
+        {
+          "browser": "IE 11.0",
+          "normalized_browser": "ie",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Geck"
         },
         {
           "browser": "Chrome 128.0.0",
           "normalized_browser": "chrome",
-          "normalized_os": "linux",
-          "os": "Linux",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.3"
-        },
-        {
-          "browser": "Other",
-          "normalized_browser": "other",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115."
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Config/91.2.1916.1"
         },
         {
-          "browser": "Edge 109.0.1518",
-          "normalized_browser": "edge",
+          "browser": "Opera 112.0.0",
+          "normalized_browser": "opera",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.14"
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/112.0.0."
         },
         {
-          "browser": "Edge 109.0.1518",
-          "normalized_browser": "edge",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.10"
-        },
-        {
-          "browser": "Other",
-          "normalized_browser": "other",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128."
-        },
-        {
-          "browser": "Other",
-          "normalized_browser": "other",
-          "normalized_os": "windows",
-          "os": "Windows",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115."
-        },
-        {
-          "browser": "Chrome 121.0.0",
+          "browser": "Chrome 123.0.0",
           "normalized_browser": "chrome",
           "normalized_os": "windows",
           "os": "Windows",
-          "share": "0.52",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.3"
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.3"
+        },
+        {
+          "browser": "Chrome 110.0.0",
+          "normalized_browser": "chrome",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.3"
+        },
+        {
+          "browser": "Other",
+          "normalized_browser": "other",
+          "normalized_os": "windows",
+          "os": "Windows",
+          "share": "0.48",
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128."
         }
       ],
       "mobile": [
@@ -171,16 +171,7 @@
           "normalized_browser": "chrome",
           "normalized_os": "android",
           "os": "Android",
-          "share": "32.77",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.3"
-        },
-        {
-          "browser": "Chrome Mobile",
-          "device": "K",
-          "normalized_browser": "chrome",
-          "normalized_os": "android",
-          "os": "Android",
-          "share": "20.17",
+          "share": "34.34",
           "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.3"
         },
         {
@@ -189,143 +180,17 @@
           "normalized_browser": "safari",
           "normalized_os": "ios",
           "os": "iOS",
-          "share": "15.13",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Samsung Internet",
-          "device": "K",
-          "normalized_browser": "samsung",
-          "normalized_os": "android",
-          "os": "Android",
-          "share": "7.56",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.3"
-        },
-        {
-          "browser": "Google",
-          "device": "iPhone",
-          "normalized_browser": "chrome",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "3.36",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/331.0.665236494 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Opera Mobile",
-          "device": "K",
-          "normalized_browser": "opera",
-          "normalized_os": "android",
-          "os": "Android",
-          "share": "2.52",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0."
-        },
-        {
-          "browser": "Mobile Safari",
-          "device": "iPhone",
-          "normalized_browser": "safari",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "2.52",
+          "share": "17.17",
           "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604."
         },
         {
           "browser": "Samsung Internet",
-          "device": "Samsung SM-G780G",
-          "normalized_browser": "samsung",
-          "normalized_os": "android",
-          "os": "Android",
-          "share": "2.52",
-          "useragent": "Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.3"
-        },
-        {
-          "browser": "Google",
-          "device": "iPhone",
-          "normalized_browser": "chrome",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "1.68",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/330.0.663358993 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Samsung Internet",
           "device": "K",
           "normalized_browser": "samsung",
           "normalized_os": "android",
           "os": "Android",
-          "share": "1.68",
+          "share": "17.17",
           "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.3"
-        },
-        {
-          "browser": "Google",
-          "device": "iPhone",
-          "normalized_browser": "chrome",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "1.68",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/293.0.586189917 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Chrome Mobile iOS",
-          "device": "iPhone",
-          "normalized_browser": "chrome",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "1.68",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/128.0.6613.92 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Mobile Safari",
-          "device": "iPhone",
-          "normalized_browser": "safari",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "1.68",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Mobile Safari",
-          "device": "iPhone",
-          "normalized_browser": "safari",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "0.84",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Google",
-          "device": "iPhone",
-          "normalized_browser": "chrome",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "0.84",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/330.0.663358993 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Mobile Safari",
-          "device": "iPhone",
-          "normalized_browser": "safari",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "0.84",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Mobile Safari",
-          "device": "iPhone",
-          "normalized_browser": "safari",
-          "normalized_os": "ios",
-          "os": "iOS",
-          "share": "0.84",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604."
-        },
-        {
-          "browser": "Chrome",
-          "device": "Huawei Browser",
-          "normalized_browser": "chrome",
-          "normalized_os": "android",
-          "os": "Android",
-          "share": "0.84",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; MED-LX9N; HMSCore 6.14.0.301) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.302 Mobile Safari/537.3"
         },
         {
           "browser": "Chrome Mobile",
@@ -333,76 +198,184 @@
           "normalized_browser": "chrome",
           "normalized_os": "android",
           "os": "Android",
-          "share": "0.84",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.3"
+          "share": "10.1",
+          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.3"
+        },
+        {
+          "browser": "Mobile Safari",
+          "device": "iPhone",
+          "normalized_browser": "safari",
+          "normalized_os": "ios",
+          "os": "iOS",
+          "share": "5.05",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604."
+        },
+        {
+          "browser": "Chrome Mobile",
+          "device": "Motorola e20 Build/RONS31.267-94-14",
+          "normalized_browser": "chrome",
+          "normalized_os": "android",
+          "os": "Android",
+          "share": "4.04",
+          "useragent": "Mozilla/5.0 (Linux; Android 11; moto e20 Build/RONS31.267-94-14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.146 Mobile Safari/537.3"
+        },
+        {
+          "browser": "Chrome",
+          "device": "Huawei Browser",
+          "normalized_browser": "chrome",
+          "normalized_os": "android",
+          "os": "Android",
+          "share": "2.02",
+          "useragent": "Mozilla/5.0 (Linux; Android 10; MED-LX9N; HMSCore 6.14.0.301) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.302 Mobile Safari/537.3"
+        },
+        {
+          "browser": "Android",
+          "device": "Generic Smartphone",
+          "normalized_browser": "android",
+          "normalized_os": "android",
+          "os": "Android",
+          "share": "2.02",
+          "useragent": "Mozilla/5.0 (Android 13; Mobile; rv:130.0) Gecko/130.0 Firefox/130."
+        },
+        {
+          "browser": "Chrome Mobile iOS",
+          "device": "iPhone",
+          "normalized_browser": "chrome",
+          "normalized_os": "ios",
+          "os": "iOS",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/129.0.6668.46 Mobile/15E148 Safari/604."
+        },
+        {
+          "browser": "Chrome Mobile iOS",
+          "device": "iPhone",
+          "normalized_browser": "chrome",
+          "normalized_os": "ios",
+          "os": "iOS",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/129.0.6668.46 Mobile/15E148 Safari/604."
+        },
+        {
+          "browser": "Mobile Safari",
+          "device": "iPhone",
+          "normalized_browser": "safari",
+          "normalized_os": "ios",
+          "os": "iOS",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Mobile/15E148 Safari/604."
+        },
+        {
+          "browser": "Google",
+          "device": "iPhone",
+          "normalized_browser": "chrome",
+          "normalized_os": "ios",
+          "os": "iOS",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/334.0.674067880 Mobile/15E148 Safari/604."
+        },
+        {
+          "browser": "Google",
+          "device": "iPhone",
+          "normalized_browser": "chrome",
+          "normalized_os": "ios",
+          "os": "iOS",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/334.0.674067880 Mobile/15E148 Safari/604."
+        },
+        {
+          "browser": "Chrome Mobile",
+          "device": "Samsung SM-A750FN",
+          "normalized_browser": "chrome",
+          "normalized_os": "android",
+          "os": "Android",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (Linux; Android 9; SM-A750FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.3"
+        },
+        {
+          "browser": "Samsung Internet",
+          "device": "K",
+          "normalized_browser": "samsung",
+          "normalized_os": "android",
+          "os": "Android",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/24.0 Chrome/117.0.0.0 Mobile Safari/537.3"
+        },
+        {
+          "browser": "Chrome Mobile",
+          "device": "Pixel 2",
+          "normalized_browser": "chrome",
+          "normalized_os": "android",
+          "os": "Android",
+          "share": "1.01",
+          "useragent": "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.3"
         }
       ]
     },
     "latest": {
       "android-mobile": [
         {
-          "browser": "Chrome Mobile 128.0.6613",
+          "browser": "Chrome Mobile 129.0.6668",
           "device": "K",
           "normalized_browser": "chrome",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36"
         },
         {
-          "browser": "Edge Mobile 127.0.2651",
+          "browser": "Edge Mobile 128.0.2739",
           "device": "OnePlus HD1913",
           "normalized_browser": "edge",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 EdgA/127.0.2651.111"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 EdgA/128.0.2739.82"
         },
         {
-          "browser": "Edge Mobile 127.0.2651",
+          "browser": "Edge Mobile 128.0.2739",
           "device": "Samsung SM-G973F",
           "normalized_browser": "edge",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 EdgA/127.0.2651.111"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 EdgA/128.0.2739.82"
         },
         {
-          "browser": "Edge Mobile 127.0.2651",
+          "browser": "Edge Mobile 128.0.2739",
           "device": "Pixel 3 XL",
           "normalized_browser": "edge",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 EdgA/127.0.2651.111"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 EdgA/128.0.2739.82"
         },
         {
-          "browser": "Edge Mobile 127.0.2651",
+          "browser": "Edge Mobile 128.0.2739",
           "device": "OnePlus ONEPLUS A6003",
           "normalized_browser": "edge",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 EdgA/127.0.2651.111"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 EdgA/128.0.2739.82"
         },
         {
-          "browser": "Chrome Mobile 128.0.0",
+          "browser": "Chrome Mobile 129.0.0",
           "device": "Lumia 950XL",
           "normalized_browser": "chrome",
           "normalized_os": "android",
           "os": "Android 10.0",
-          "useragent": "Mozilla/5.0 (Windows Mobile 10; Android 10.0; Microsoft; Lumia 950XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36 Edge/40.15254.603"
+          "useragent": "Mozilla/5.0 (Windows Mobile 10; Android 10.0; Microsoft; Lumia 950XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36 Edge/40.15254.603"
         },
         {
-          "browser": "Firefox Mobile 129.0",
+          "browser": "Firefox Mobile 130.0",
           "device": "Generic Smartphone",
           "normalized_browser": "firefox",
           "normalized_os": "android",
-          "os": "Android 14",
-          "useragent": "Mozilla/5.0 (Android 14; Mobile; rv:129.0) Gecko/129.0 Firefox/129.0"
+          "os": "Android 15",
+          "useragent": "Mozilla/5.0 (Android 15; Mobile; rv:130.0) Gecko/130.0 Firefox/130.0"
         },
         {
-          "browser": "Firefox Mobile 129.0",
+          "browser": "Firefox Mobile 130.0",
           "device": "LG-M255",
           "normalized_browser": "firefox",
           "normalized_os": "android",
-          "os": "Android 14",
-          "useragent": "Mozilla/5.0 (Android 14; Mobile; LG-M255; rv:129.0) Gecko/129.0 Firefox/129.0"
+          "os": "Android 15",
+          "useragent": "Mozilla/5.0 (Android 15; Mobile; LG-M255; rv:130.0) Gecko/130.0 Firefox/130.0"
         },
         {
           "browser": "Opera Mobile 76.2.4027",
@@ -410,7 +383,7 @@
           "normalized_browser": "opera",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 OPR/76.2.4027.73374"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 OPR/76.2.4027.73374"
         },
         {
           "browser": "Opera Mobile 76.2.4027",
@@ -418,7 +391,7 @@
           "normalized_browser": "opera",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 OPR/76.2.4027.73374"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 OPR/76.2.4027.73374"
         },
         {
           "browser": "Opera Mobile 76.2.4027",
@@ -426,129 +399,129 @@
           "normalized_browser": "opera",
           "normalized_os": "android",
           "os": "Android 10",
-          "useragent": "Mozilla/5.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.88 Mobile Safari/537.36 OPR/76.2.4027.73374"
+          "useragent": "Mozilla/5.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.54 Mobile Safari/537.36 OPR/76.2.4027.73374"
         }
       ],
       "ipad": [
         {
-          "browser": "Firefox iOS 129.0",
+          "browser": "Firefox iOS 130.0",
           "device": "iPad",
           "normalized_browser": "firefox",
           "normalized_os": "ios",
-          "os": "iOS 14.6.1",
-          "useragent": "Mozilla/5.0 (iPad; CPU OS 14_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/129.0 Mobile/15E148 Safari/605.1.15"
+          "os": "iOS 14.7",
+          "useragent": "Mozilla/5.0 (iPad; CPU OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/130.0 Mobile/15E148 Safari/605.1.15"
         },
         {
-          "browser": "Mobile Safari 17.5",
+          "browser": "Mobile Safari 18.0",
           "device": "iPad",
           "normalized_browser": "safari",
           "normalized_os": "ios",
-          "os": "iOS 17.6.1",
-          "useragent": "Mozilla/5.0 (iPad; CPU OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+          "os": "iOS 17.7",
+          "useragent": "Mozilla/5.0 (iPad; CPU OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
         }
       ],
       "iphone": [
         {
-          "browser": "Chrome Mobile iOS 128.0.6613",
+          "browser": "Chrome Mobile iOS 129.0.6668",
           "device": "iPhone",
           "normalized_browser": "chrome",
           "normalized_os": "ios",
-          "os": "iOS 17.6",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/128.0.6613.98 Mobile/15E148 Safari/604.1"
+          "os": "iOS 17.7",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/129.0.6668.46 Mobile/15E148 Safari/604.1"
         },
         {
-          "browser": "Edge Mobile 128.2739.42",
+          "browser": "Edge Mobile 128.2739.82",
           "device": "iPhone",
           "normalized_browser": "edge",
           "normalized_os": "ios",
-          "os": "iOS 17.6.1",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/128.2739.42 Mobile/15E148 Safari/605.1.15"
+          "os": "iOS 17.7",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 EdgiOS/128.2739.82 Mobile/15E148 Safari/605.1.15"
         },
         {
-          "browser": "Firefox iOS 129.0",
+          "browser": "Firefox iOS 130.0",
           "device": "iPhone",
           "normalized_browser": "firefox",
           "normalized_os": "ios",
-          "os": "iOS 14.6.1",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/129.0 Mobile/15E148 Safari/605.1.15"
+          "os": "iOS 14.7",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/130.0 Mobile/15E148 Safari/605.1.15"
         },
         {
-          "browser": "Mobile Safari 17.5",
+          "browser": "Mobile Safari 18.0",
           "device": "iPhone",
           "normalized_browser": "safari",
           "normalized_os": "ios",
-          "os": "iOS 17.6.1",
-          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+          "os": "iOS 17.7",
+          "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
         }
       ],
       "ipod": [
         {
-          "browser": "Chrome Mobile iOS 128.0.6613",
+          "browser": "Chrome Mobile iOS 129.0.6668",
           "device": "iPod",
           "normalized_browser": "chrome",
           "normalized_os": "ios",
-          "os": "iOS 17.6",
-          "useragent": "Mozilla/5.0 (iPod; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/128.0.6613.98 Mobile/15E148 Safari/604.1"
+          "os": "iOS 17.7",
+          "useragent": "Mozilla/5.0 (iPod; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/129.0.6668.46 Mobile/15E148 Safari/604.1"
         },
         {
-          "browser": "Firefox iOS 129.0",
+          "browser": "Firefox iOS 130.0",
           "device": "iPod",
           "normalized_browser": "firefox",
           "normalized_os": "ios",
-          "os": "iOS 14.6.1",
-          "useragent": "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_6_1 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/129.0 Mobile/15E148 Safari/605.1.15"
+          "os": "iOS 14.7",
+          "useragent": "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/130.0 Mobile/15E148 Safari/605.1.15"
         },
         {
-          "browser": "Mobile Safari 17.5",
+          "browser": "Mobile Safari 18.0",
           "device": "iPod",
           "normalized_browser": "safari",
           "normalized_os": "ios",
-          "os": "iOS 17.6.1",
-          "useragent": "Mozilla/5.0 (iPod touch; CPU iPhone 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+          "os": "iOS 17.7",
+          "useragent": "Mozilla/5.0 (iPod touch; CPU iPhone 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
         }
       ],
       "linux-desktop": [
         {
-          "browser": "Chrome 128.0.0",
+          "browser": "Chrome 129.0.0",
           "normalized_browser": "chrome",
           "normalized_os": "linux",
           "os": "Linux",
-          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "linux",
           "os": "Linux",
-          "useragent": "Mozilla/5.0 (X11; Linux i686; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "useragent": "Mozilla/5.0 (X11; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "linux",
           "os": "Linux",
-          "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "useragent": "Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "linux",
           "os": "Ubuntu",
-          "useragent": "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "useragent": "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "linux",
           "os": "Ubuntu",
-          "useragent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "useragent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "linux",
           "os": "Fedora",
-          "useragent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "useragent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
           "browser": "Firefox 128.0",
@@ -583,81 +556,81 @@
           "normalized_browser": "opera",
           "normalized_os": "linux",
           "os": "Linux",
-          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/113.0.0.0"
+          "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0"
         }
       ],
       "mac-desktop": [
         {
-          "browser": "Chrome 128.0.0",
+          "browser": "Chrome 129.0.0",
           "normalized_browser": "chrome",
           "normalized_os": "macosx",
           "os": "Mac OS X 10.15.7",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
         },
         {
-          "browser": "Edge 127.0.2651",
+          "browser": "Edge 128.0.2739",
           "normalized_browser": "edge",
           "normalized_os": "macosx",
           "os": "Mac OS X 10.15.7",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/127.0.2651.105"
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/128.0.2739.90"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "macosx",
-          "os": "Mac OS X 14.6",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.6; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "os": "Mac OS X 14.7",
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
           "browser": "Firefox 128.0",
           "normalized_browser": "firefox",
           "normalized_os": "macosx",
-          "os": "Mac OS X 14.6",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.6; rv:128.0) Gecko/20100101 Firefox/128.0"
+          "os": "Mac OS X 14.7",
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:128.0) Gecko/20100101 Firefox/128.0"
         },
         {
-          "browser": "Safari 17.5",
+          "browser": "Safari 18.0",
           "normalized_browser": "safari",
           "normalized_os": "macosx",
-          "os": "Mac OS X 14.6.1",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+          "os": "Mac OS X 14.7",
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15"
         },
         {
           "browser": "Opera 113.0.0",
           "normalized_browser": "opera",
           "normalized_os": "macosx",
-          "os": "Mac OS X 14.6.1",
-          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/113.0.0.0"
+          "os": "Mac OS X 14.7",
+          "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0"
         }
       ],
       "windows-desktop": [
         {
-          "browser": "Chrome 128.0.0",
+          "browser": "Chrome 129.0.0",
           "normalized_browser": "chrome",
           "normalized_os": "windows",
           "os": "Windows 10/11",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
         },
         {
-          "browser": "Edge 127.0.2651",
+          "browser": "Edge 128.0.2739",
           "normalized_browser": "edge",
           "normalized_os": "windows",
           "os": "Windows 10/11",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/127.0.2651.105"
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/128.0.2739.90"
         },
         {
           "browser": "Edge 44.18363.8131",
           "normalized_browser": "edge",
           "normalized_os": "windows",
           "os": "Windows 10/11",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edge/44.18363.8131"
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edge/44.18363.8131"
         },
         {
-          "browser": "Firefox 129.0",
+          "browser": "Firefox 130.0",
           "normalized_browser": "firefox",
           "normalized_os": "windows",
           "os": "Windows 10/11",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
         },
         {
           "browser": "Firefox 128.0",
@@ -671,14 +644,14 @@
           "normalized_browser": "opera",
           "normalized_os": "windows",
           "os": "Windows 10/11",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/113.0.0.0"
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0"
         },
         {
           "browser": "Opera 113.0.0",
           "normalized_browser": "opera",
           "normalized_os": "windows",
           "os": "Windows 10/11",
-          "useragent": "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/113.0.0.0"
+          "useragent": "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0"
         }
       ]
     }
