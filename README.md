@@ -16,7 +16,7 @@ Thanks to https://user-agents.net/ & https://useragents.me for the service!
 ## LICENSE
 
 ```
-Copyright (c) 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Nissar Chababy
+Copyright (c) 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Nissar Chababy
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
