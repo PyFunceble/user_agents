@@ -55,7 +55,7 @@ License:
 import functools
 import logging
 import secrets
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Callable, Dict
 
 import requests
@@ -145,8 +145,8 @@ class UserAgentsUpdater:
         if not cache or not cache.get("data"):
             return True
 
-        cache_timestamp = datetime.fromisoformat(cache["@timestamp"])
-        elapsed = datetime.utcnow() - cache_timestamp
+        cache_timestamp = datetime.fromisoformat(cache["@timestamp"]).replace(tzinfo=timezone.utc)
+        elapsed = datetime.now(timezone.utc) - cache_timestamp
 
         return elapsed.total_seconds() > self.CACHE_EXPIRATION
 
@@ -229,7 +229,7 @@ class UserAgentsUpdater:
             return {}
 
         cache_data = {
-            "@timestamp": datetime.utcnow().isoformat(),
+            "@timestamp": datetime.now(timezone.utc).isoformat(),
             "data": fetched_data,
         }
 
