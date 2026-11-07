@@ -378,18 +378,14 @@ class UserAgentsUpdater:
 
         necessary = ["linux", "macosx", "windows", "win10"]
 
-        for browser in normalized_data["@modern"]:
+        for browser, platforms in normalized_data["@modern"].items():
+            fallback = list(
+                dict.fromkeys(agent for agents in platforms.values() for agent in agents)
+            )
             for os in necessary:
-                if os not in normalized_data["@modern"][browser]:
-                    normalized_data["@modern"][browser][os] = []
-
-        for browser in normalized_data:  # pylint: disable=consider-using-dict-items
-            if browser == "@modern":
-                continue
-
-            for os in necessary:
-                if os not in normalized_data[browser]:
-                    normalized_data[browser][os] = None
+                if not platforms.get(os):
+                    platforms[os] = fallback.copy()
+                    normalized_data[browser][os] = secrets.choice(fallback)
 
         DictHelper(normalized_data).to_json_file(self.OUTPUT_FILE, indent=2)
 
