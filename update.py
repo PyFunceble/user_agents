@@ -142,7 +142,7 @@ class UserAgentsUpdater:
 
         cache = self.read_cache()
 
-        if not cache:
+        if not cache or not cache.get("data"):
             return True
 
         cache_timestamp = datetime.fromisoformat(cache["@timestamp"])
@@ -161,7 +161,7 @@ class UserAgentsUpdater:
         )
 
     @execute_if_authorized(None)  # pylint: disable=too-many-function-args
-    def fetch_user_agents(self) -> Dict[str, Any]:
+    def fetch_user_agents(self, *, write_cache: bool = True) -> Dict[str, Any]:
         """
         Fetches the user agents from the source.
         """
@@ -178,50 +178,39 @@ class UserAgentsUpdater:
 
         logging.debug(pretty_soup)
 
-        for container in pretty_soup.find_all("div", {"class": "container"}):
-            category = container.find("h2")
-            category_id = category.get("id") if category else None
-
-            if not category or not category_id:
+        for container in pretty_soup.find_all("section", id=True):
+            category_id = container["id"]
+            if category_id in ("desktop", "mobile", "tablet"):
+                agent_type, device_group = "common", category_id
+            elif category_id.startswith("latest-"):
+                agent_type, device_group = "latest", category_id[len("latest-") :]
+            else:
                 continue
 
-            if "-useragent" not in category_id:
+            table = container.find("table")
+            if not table or not table.find("thead") or not table.find("tbody"):
                 continue
 
-            normalized_category_id = category_id.replace("-useragents", "").replace(
-                "most-", ""
-            )
+            headers = [
+                header.get_text(strip=True).lower().replace(" ", "")
+                for header in table.find("thead").find_all("th")
+            ]
 
-            agent_type, device_group = normalized_category_id.split("-", 1)
-
-            headers = [header.text for header in container.find("thead").find_all("th")]
-
-            if all(not x for x in headers):
+            if not {"useragent", "os", "browser"}.issubset(headers):
                 continue
 
-            logging.debug(
-                "Normalized ID: %s | ID: %s", normalized_category_id, category_id
-            )
+            logging.debug("ID: %s", category_id)
             logging.debug("Agent type: %s | Device group: %s", agent_type, device_group)
             logging.debug("Headers: %s", headers)
 
-            if agent_type not in fetched_data:
-                fetched_data[agent_type] = {}
-
-            if device_group not in fetched_data[agent_type]:
-                fetched_data[agent_type][device_group] = []
-
-            for row in container.find("tbody").find_all("tr"):
+            for row in table.find("tbody").find_all("tr"):
                 cells = row.find_all("td")
-                datasets = dict(zip(headers, [x.text.strip() for x in cells]))
+                datasets = dict(zip(headers, [x.get_text(strip=True) for x in cells]))
 
                 logging.debug("Cells: %s | Datasets: %s", cells, datasets)
 
-                if "os + browser" in datasets:
-                    datasets["browser"], datasets["os"] = [
-                        x.strip() for x in datasets["os + browser"].split(",", 1)
-                    ]
-                    del datasets["os + browser"]
+                if not all(datasets.get(key) for key in ("useragent", "os", "browser")):
+                    continue
 
                 if "device" in datasets and "more info" in datasets["device"]:
                     datasets["device"] = datasets["device"].split()[0].strip()
@@ -231,7 +220,13 @@ class UserAgentsUpdater:
                 )
                 datasets["normalized_os"] = self.normalize_os(datasets["os"])
 
-                fetched_data[agent_type][device_group].append(datasets)
+                fetched_data.setdefault(agent_type, {}).setdefault(device_group, []).append(
+                    datasets
+                )
+
+        if not fetched_data:
+            logging.warning("No user agents found; leaving existing files unchanged")
+            return {}
 
         cache_data = {
             "@timestamp": datetime.utcnow().isoformat(),
@@ -240,7 +235,8 @@ class UserAgentsUpdater:
 
         logging.debug(fetched_data)
 
-        DictHelper(cache_data).to_json_file(self.CACHE_FILE, indent=2)
+        if write_cache:
+            DictHelper(cache_data).to_json_file(self.CACHE_FILE, indent=2)
 
         return cache_data
 
@@ -377,6 +373,9 @@ class UserAgentsUpdater:
                             user_agent["normalized_os"]
                         ]
 
+        if not normalized_data["@modern"]:
+            return {}
+
         necessary = ["linux", "macosx", "windows", "win10"]
 
         for browser in normalized_data["@modern"]:
@@ -398,24 +397,26 @@ class UserAgentsUpdater:
 
 
 if __name__ == "__main__":
-    try:
-        CI_ENGINE = GitHubActions(
-            authorized=True,
-            end_commit_message=f"Update of {UserAgentsUpdater.OUTPUT_FILE}",
-        )
-        CI_ENGINE.init()
-    except ContinuousIntegrationException:
-        pass
-
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s :: %(levelname)s :: %(message)s"
     )
 
     updater = UserAgentsUpdater()
-    updater.fetch_user_agents()
-    updater.generate_user_agents()
+    fetched = updater.fetch_user_agents(write_cache=False)
+    if fetched:
+        try:
+            CI_ENGINE = GitHubActions(
+                authorized=True,
+                end_commit_message=f"Update of {UserAgentsUpdater.OUTPUT_FILE}",
+            )
+            CI_ENGINE.init()
+        except ContinuousIntegrationException:
+            pass
 
-    try:
-        CI_ENGINE.apply_end_commit()
-    except StopExecution:
-        pass
+        DictHelper(fetched).to_json_file(updater.CACHE_FILE, indent=2)
+        updater.generate_user_agents()
+
+        try:
+            CI_ENGINE.apply_end_commit()
+        except StopExecution:
+            pass
